@@ -1,7 +1,34 @@
 # Snake Game
 
-## Overview
-This project is a simple implementation of the classic Snake game. The game is designed to be easy to understand and modify, making it a great starting point for learning game development.
+A classic Snake game implemented in Python using Pygame.
+
+## Features
+
+- Classic snake gameplay
+- Score tracking
+- Persistent high score
+- Smooth controls
+
+## Setup
+
+1. Make sure you have Python installed
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+3. Run the game:
+```bash
+python main.py
+```
+
+## Controls
+
+- Arrow keys to move the snake
+- ESC to quit the game
+
+## How to Play
+
+Eat the food to grow and increase your score. Avoid hitting the walls or yourself!
 
 ## Project Structure
 - `src/`: Contains the source code for the game.
@@ -43,16 +70,6 @@ This project is a simple implementation of the classic Snake game. The game is d
     pip install -r requirements.txt
     ```
 
-## How to Play
-
-1. Run the game:
-    ```sh
-    python main.py
-    ```
-2. Use the arrow keys to control the snake.
-3. Eat the food to grow longer.
-4. Avoid running into the walls or the snake's own body.
-
 ## Development Setup
 
 1. Follow the installation instructions to set up the environment.
@@ -83,11 +100,20 @@ This project is a simple implementation of the classic Snake game. The game is d
 - `class Food`: Represents the food in the game.
     - `spawn()`: Places the food at a random location on the screen.
 
-## Usage
+## Running the Project
+
 To run the game, execute the following command:
 
-```bash
+```sh
 python src/game.py
+```
+
+## Testing
+
+To run the tests, execute the following command:
+
+```sh
+pytest
 ```
 
 Enjoy playing the Snake game! Feel free to modify and enhance the game as you wish.
