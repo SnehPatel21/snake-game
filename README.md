@@ -15,14 +15,73 @@ This project is a simple implementation of the classic Snake game. The game is d
 
 - `docs/`: Documentation related to the project, including setup instructions and gameplay details.
 
-## Installation
-To get started with the Snake game, clone the repository and install the required dependencies.
+## Installation Instructions
 
-```bash
-git clone <repository-url>
-cd snake-game
-pip install -r requirements.txt
-```
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/SnehPatel21/snake-game.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd snake-game
+    ```
+3. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+4. Activate the virtual environment:
+    - On Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+5. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## How to Play
+
+1. Run the game:
+    ```sh
+    python main.py
+    ```
+2. Use the arrow keys to control the snake.
+3. Eat the food to grow longer.
+4. Avoid running into the walls or the snake's own body.
+
+## Development Setup
+
+1. Follow the installation instructions to set up the environment.
+2. Install additional development dependencies:
+    ```sh
+    pip install -r dev-requirements.txt
+    ```
+3. Run the tests to ensure everything is working:
+    ```sh
+    pytest
+    ```
+
+## Basic API Documentation
+
+### `main.py`
+
+- `main()`: Starts the game.
+
+### `snake.py`
+
+- `class Snake`: Represents the snake in the game.
+    - `move()`: Moves the snake in the current direction.
+    - `grow()`: Increases the length of the snake.
+    - `check_collision()`: Checks if the snake has collided with itself or the walls.
+
+### `food.py`
+
+- `class Food`: Represents the food in the game.
+    - `spawn()`: Places the food at a random location on the screen.
 
 ## Usage
 To run the game, execute the following command:
