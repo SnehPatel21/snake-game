@@ -2,6 +2,9 @@
 
 A classic Snake game implemented in Python using Pygame.
 
+![{4B3208CF-3181-456A-90C8-6E5A40D979C0}](https://github.com/user-attachments/assets/80ba2f90-8527-4d42-9c65-b378f16422fd)
+
+
 ## Features
 
 - Classic snake gameplay
